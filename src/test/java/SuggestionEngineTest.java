@@ -10,7 +10,8 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-
+//THis is just to test git
+//how much needs to be added to change?
 public class SuggestionEngineTest {
     private SuggestionEngine suggestionEngine;
 
@@ -39,8 +40,8 @@ public class SuggestionEngineTest {
         String word = "example";
         List<String> deletions = new SuggestionEngine().testWordEdits(word).collect(Collectors.toList());
 
-        assertTrue(deletions.contains("xample"));
-        assertTrue(deletions.contains("eample"));
+        assertTrue(deletions.contains("example"));
+        assertTrue(deletions.contains("example"));
         assertTrue(deletions.contains("exmple"));
         // ... other assertions for deletions
     }
