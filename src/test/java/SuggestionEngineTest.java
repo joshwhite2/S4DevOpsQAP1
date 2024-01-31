@@ -40,8 +40,8 @@ public class SuggestionEngineTest {
         String word = "example";
         List<String> deletions = new SuggestionEngine().testWordEdits(word).collect(Collectors.toList());
 
-        assertTrue(deletions.contains("example"));
-        assertTrue(deletions.contains("example"));
+        assertTrue(deletions.contains("exampe"));
+        assertTrue(deletions.contains("xample"));
         assertTrue(deletions.contains("exmple"));
         // ... other assertions for deletions
     }
